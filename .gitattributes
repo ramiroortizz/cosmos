@@ -1,0 +1,22 @@
+# Normaliza line endings: LF en el repo, checkout nativo en cada plataforma.
+# Evita diffs falsos cuando un contributor edita desde Windows y otro desde Linux/macOS.
+* text=auto eol=lf
+
+# Archivos que deben quedar CRLF en Windows
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Archivos binarios: nunca tocar
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.db binary
+*.sqlite binary
+*.sqlite3 binary
